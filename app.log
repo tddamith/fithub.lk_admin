@@ -36,3 +36,33 @@
 2026-01-06 19:48:18,270 - INFO - Connected to MongoDB: fithub_db
 2026-01-06 19:52:38,523 - INFO - MongoDB connection closed.
 2026-01-06 19:52:42,672 - INFO - Connected to MongoDB: fithub_db
+2026-01-07 19:21:04,455 - INFO - Connected to MongoDB: fithub_db
+2026-01-07 19:22:15,467 - INFO - MongoDB connection closed.
+2026-01-07 19:22:17,023 - INFO - Connected to MongoDB: fithub_db
+2026-01-07 19:24:13,931 - INFO - MongoDB connection closed.
+2026-01-07 19:24:16,404 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 10:53:29,616 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 10:55:22,312 - INFO - MongoDB connection closed.
+2026-01-08 10:55:24,800 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 10:59:19,664 - INFO - MongoDB connection closed.
+2026-01-08 10:59:23,738 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 11:04:05,361 - INFO - MongoDB connection closed.
+2026-01-08 11:04:15,453 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 11:04:34,568 - INFO - Collection 'categories' created.
+2026-01-08 11:14:24,968 - INFO - MongoDB connection closed.
+2026-01-08 11:14:27,278 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 11:31:55,075 - INFO - Collection 'facilities' created.
+2026-01-08 11:37:08,784 - INFO - MongoDB connection closed.
+2026-01-08 11:37:11,602 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 11:42:14,613 - INFO - MongoDB connection closed.
+2026-01-08 11:42:18,016 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 12:03:38,480 - INFO - MongoDB connection closed.
+2026-01-08 12:03:40,370 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 13:21:47,915 - INFO - MongoDB connection closed.
+2026-01-08 13:21:53,257 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 13:21:56,869 - INFO - MongoDB connection closed.
+2026-01-08 13:22:08,186 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 13:22:08,189 - INFO - MongoDB connection closed.
+2026-01-08 13:22:09,675 - INFO - Connected to MongoDB: fithub_db
+2026-01-08 13:22:16,085 - INFO - MongoDB connection closed.
+2026-01-08 13:22:17,642 - INFO - Connected to MongoDB: fithub_db

@@ -25,11 +25,9 @@ async def create_category(category: CategoryBase):
         
         category_data = {
             "category_id": str(ObjectId()),
-            "icon_name": category.icon_name,
             "category_name": category.category_name,
             "status": "new",
-            "created_at": datetime.utcnow()
-           
+            "created_at": datetime.utcnow()           
         }
         
         result = await category_collection.insert_one(category_data)
