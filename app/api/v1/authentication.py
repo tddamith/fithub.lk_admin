@@ -30,8 +30,9 @@ async def create_news(user: SignIn):
         return {"status": False, "message": str(e)}
     
 @router.post("/validate-token")
-async def refresh_token_endpoint(token: str):
+async def refresh_token_endpoint(body: dict):
     try:
+        token = body.get("token")
         if not token:
             return {"status": False, "message": "Token is missing"}
 

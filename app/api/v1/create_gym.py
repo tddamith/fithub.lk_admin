@@ -46,7 +46,7 @@ async def create_gym(gym: GymBase):
         
         result = await gym_collection.insert_one(gym_data)
         
-        return {"message": "gym created successfully", "gym_id": str(result.inserted_id)}
+        return {"status": True, "message": "gym created successfully", "gym_id": str(result.inserted_id)}
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred: {e}")
