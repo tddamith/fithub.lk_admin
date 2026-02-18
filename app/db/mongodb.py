@@ -13,6 +13,14 @@ class MongoDB:
             self.client = motor.motor_asyncio.AsyncIOMotorClient(settings.MONGO_URI)
             self.db = self.client[settings.MONGO_DB]
             logging.info(f"Connected to MongoDB: {settings.MONGO_DB}")
+
+            # Ensure common indexes (create if missing). It's safe to call on every connect.
+            try:
+                # create a unique index on users.email to enforce uniqueness at the DB level
+                await self.db["users"].create_index("email", unique=True, sparse=True)
+                logging.info("Ensured unique index on users.email")
+            except Exception as ie:
+                logging.warning(f"Could not create users.email index: {ie}")
         except Exception as e:
             logging.error(f"Failed to connect to MongoDB: {e}")
             raise e

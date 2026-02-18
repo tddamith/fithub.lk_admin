@@ -1,2 +1,36 @@
 2025-12-11 16:16:04,244 - INFO - Connected to MongoDB: fithub_db
 2025-12-11 20:02:16,267 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:07:58,981 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:11:52,918 - INFO - MongoDB connection closed.
+2026-02-18 00:11:57,571 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:16:53,649 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:16:53,649 - INFO - MongoDB connection closed.
+2026-02-18 00:17:19,549 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:20:29,753 - INFO - MongoDB connection closed.
+2026-02-18 00:37:26,649 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 00:37:56,908 - WARNING - Could not create users.email index: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6994bc6ee6108a3009993a76, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-02-18 21:59:30,229 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 22:00:00,433 - WARNING - Could not create users.email index: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6995e8eaf2d536e86a4c3776, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-02-18 22:00:11,853 - INFO - MongoDB connection closed.
+2026-02-18 22:24:13,537 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 22:24:43,852 - WARNING - Could not create users.email index: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6995eeb5f0a2bf1f6f8905f2, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-02-18 22:39:42,467 - INFO - MongoDB connection closed.
+2026-02-18 22:47:23,567 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 22:47:53,761 - WARNING - Could not create users.email index: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6995f42300adcceb1016a8b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-02-18 22:49:18,256 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 22:49:48,538 - WARNING - Could not create users.email index: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6995f496849115ccfbd54f94, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-02-18 22:52:19,152 - INFO - MongoDB connection closed.
+2026-02-18 23:48:42,813 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 23:48:42,851 - INFO - Ensured unique index on users.email
+2026-02-19 00:05:01,721 - INFO - MongoDB connection closed.
+2026-02-19 00:05:07,015 - INFO - Connected to MongoDB: fithub_db
+2026-02-19 00:05:07,032 - INFO - Ensured unique index on users.email
+2026-02-19 00:05:47,194 - INFO - MongoDB connection closed.
+2026-02-19 00:05:52,055 - INFO - Connected to MongoDB: fithub_db
+2026-02-19 00:05:52,075 - INFO - Ensured unique index on users.email
+2026-02-19 00:13:49,841 - INFO - MongoDB connection closed.
+2026-02-19 00:13:50,855 - INFO - Connected to MongoDB: fithub_db
+2026-02-19 00:13:50,870 - INFO - Ensured unique index on users.email
+2026-02-19 00:14:16,042 - INFO - MongoDB connection closed.
+2026-02-19 00:14:20,889 - INFO - Connected to MongoDB: fithub_db
+2026-02-19 00:14:20,903 - INFO - Ensured unique index on users.email

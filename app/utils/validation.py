@@ -6,7 +6,14 @@ from jose import jwt, ExpiredSignatureError, JWTError
 import os
 
 # DO NOT generate current time globally. It must be fresh each time.
-JWT_SECRET = os.getenv("JWT_SECRET")
+# Support both upper- and lower-case env keys and provide a safe dev default with a clear warning.
+JWT_SECRET = os.getenv("JWT_SECRET") or os.getenv("jwt_secret")
+if not JWT_SECRET:
+    # Do not fail hard in development; warn the developer and use a non-secret default.
+    # In production you should always set JWT_SECRET to a strong value.
+    import warnings
+    warnings.warn("Environment variable JWT_SECRET not set. Using insecure default for development.")
+    JWT_SECRET = "dev_secret"
 #'yNmed6TbrD9i3EM7BjqNtyFp-T5_jlpdcgMLx6S8LCXubTayv27hUK8x9Z'
 
 
@@ -26,6 +33,14 @@ async def validate_password(saved_password: str, entered_password: str, salt: st
 
 async def generate_signature(payload: dict) -> str:
     expiration_time = datetime.datetime.utcnow() + datetime.timedelta(days=1)
+    payload["exp"] = expiration_time
+    token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
+    return token
+
+
+async def refresh_signature(payload: dict) -> str:
+    """Generate a longer-lived refresh token."""
+    expiration_time = datetime.datetime.utcnow() + datetime.timedelta(days=30)
     payload["exp"] = expiration_time
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token
