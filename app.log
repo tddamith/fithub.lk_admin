@@ -66,3 +66,13 @@
 2026-01-08 13:22:09,675 - INFO - Connected to MongoDB: fithub_db
 2026-01-08 13:22:16,085 - INFO - MongoDB connection closed.
 2026-01-08 13:22:17,642 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:43:18,797 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:44:00,347 - INFO - MongoDB connection closed.
+2026-02-18 09:44:05,301 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:49:03,633 - INFO - MongoDB connection closed.
+2026-02-18 09:49:17,842 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:50:55,295 - INFO - MongoDB connection closed.
+2026-02-18 09:50:59,681 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:51:50,692 - INFO - MongoDB connection closed.
+2026-02-18 09:51:55,169 - INFO - Connected to MongoDB: fithub_db
+2026-02-18 09:56:13,084 - INFO - Collection 'trainers' created.
