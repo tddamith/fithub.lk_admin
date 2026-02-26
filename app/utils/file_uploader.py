@@ -67,11 +67,6 @@ async def upload_to_s3_with_progress(file_data, filename, content_type, job_coll
         simulate_task.cancel()
 
 
-
-
-
-
-
 # ======================================================================================
 
 # --- Progress Tracker ---

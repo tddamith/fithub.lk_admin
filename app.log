@@ -76,3 +76,41 @@
 2026-02-18 09:51:50,692 - INFO - MongoDB connection closed.
 2026-02-18 09:51:55,169 - INFO - Connected to MongoDB: fithub_db
 2026-02-18 09:56:13,084 - INFO - Collection 'trainers' created.
+2026-02-23 16:11:02,623 - INFO - Connected to MongoDB: fithub_db
+2026-02-23 16:17:29,322 - INFO - MongoDB connection closed.
+2026-02-23 16:17:31,062 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 10:04:51,146 - INFO - MongoDB connection closed.
+2026-02-24 10:04:53,975 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 10:05:28,412 - INFO - MongoDB connection closed.
+2026-02-24 10:08:16,007 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 10:18:00,969 - INFO - MongoDB connection closed.
+2026-02-24 10:34:48,296 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 12:58:13,841 - INFO - MongoDB connection closed.
+2026-02-24 12:58:25,987 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 13:13:24,794 - INFO - MongoDB connection closed.
+2026-02-24 13:13:27,183 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 14:20:30,147 - INFO - MongoDB connection closed.
+2026-02-24 14:20:32,239 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 14:20:43,233 - INFO - MongoDB connection closed.
+2026-02-24 14:20:44,890 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 14:20:48,907 - INFO - MongoDB connection closed.
+2026-02-24 14:20:50,474 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 14:23:27,839 - INFO - MongoDB connection closed.
+2026-02-24 14:23:29,582 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 14:31:13,295 - INFO - MongoDB connection closed.
+2026-02-24 14:31:15,289 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 15:31:27,527 - INFO - MongoDB connection closed.
+2026-02-24 16:24:38,572 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 22:07:17,384 - INFO - Connected to MongoDB: fithub_db
+2026-02-24 23:02:42,313 - INFO - MongoDB connection closed.
+2026-02-24 23:02:53,773 - INFO - Connected to MongoDB: fithub_db
+2026-02-26 10:55:03,282 - INFO - MongoDB connection closed.
+2026-02-26 10:55:09,437 - INFO - Connected to MongoDB: fithub_db
+2026-02-26 10:59:11,897 - INFO - MongoDB connection closed.
+2026-02-26 10:59:14,183 - INFO - Connected to MongoDB: fithub_db
+2026-02-26 11:13:20,797 - INFO - MongoDB connection closed.
+2026-02-26 11:13:22,762 - INFO - Connected to MongoDB: fithub_db
+2026-02-26 12:07:24,838 - INFO - MongoDB connection closed.
+2026-02-26 12:07:31,833 - INFO - Connected to MongoDB: fithub_db
+2026-02-26 12:09:57,993 - INFO - MongoDB connection closed.
+2026-02-26 12:09:59,767 - INFO - Connected to MongoDB: fithub_db
