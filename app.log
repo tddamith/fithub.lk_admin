@@ -95,3 +95,10 @@
 2026-05-05 12:16:31,341 - INFO - Connected to MongoDB: fithub_db
 2026-05-05 12:17:43,976 - INFO - Connected to MongoDB: fithub_db
 2026-05-05 12:29:41,170 - INFO - Connected to MongoDB: fithub_db
+2026-05-06 07:38:01,944 - INFO - Connected to MongoDB: fithub_db
+2026-05-06 08:51:40,961 - INFO - Collection 'owners' created.
+2026-05-06 08:52:33,620 - WARNING - [DEV] SMTP not configured. OTP for kckwishma26@gmail.com: 3957
+2026-05-06 09:12:15,922 - INFO - MongoDB connection closed.
+2026-05-06 09:15:06,007 - INFO - Connected to MongoDB: fithub_db
+2026-05-06 09:15:06,433 - INFO - MongoDB connection closed.
+2026-05-06 09:15:08,206 - INFO - Connected to MongoDB: fithub_db
