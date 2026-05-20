@@ -68,6 +68,34 @@ async def get_gyms():
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred: {e}")
+  
+# get gym by id
+@router.get("/get/gym/by/{gymId}")
+async def get_gym_by_id(gymId: str):
+    try:
+        gym_collection = await mongo.get_collection("gyms")
+
+        gym = await gym_collection.find_one({"gym_id": gymId})
+
+        if not gym:
+            raise HTTPException(status_code=404, detail="Gym not found")
+
+        gym["_id"] = str(gym["_id"])
+
+        return {
+            "status": True,
+            "message": "Gym fetched successfully",
+            "gym": gym,
+        }
+
+    except HTTPException:
+        raise
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"An error occurred: {e}",
+        )
     
 #update gym
 @router.put("/update/gym/by/{gym_id}")

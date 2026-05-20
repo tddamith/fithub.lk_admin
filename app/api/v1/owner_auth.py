@@ -19,10 +19,10 @@ GYMS_COL = "gyms"
 @router.post("/signup")
 async def owner_signup(data: OwnerSignup):
     try:
-        owners = await mongo.get_collection(OWNERS_COL)
+        # owners = await mongo.get_collection(OWNERS_COL)
         gyms = await mongo.get_collection(GYMS_COL)
 
-        if await owners.find_one({"email": data.email}):
+        if await gyms.find_one({"email": data.email}):
             raise HTTPException(status_code=400, detail="Email already registered")
 
         if await gyms.find_one({"gym_name": data.gym_name}):
@@ -37,20 +37,20 @@ async def owner_signup(data: OwnerSignup):
         await gyms.insert_one({
             "gym_id": gym_id,
             "gym_name": data.gym_name,
-            "city": data.city,
-            "address": data.address,
-            "contact": data.contact,
-            "about": data.about,
+            # "city": data.city,
+            # "address": data.address,
+            # "contact": data.contact,
+            # "about": data.about,
             "status": "pending",
             "created_at": datetime.utcnow().isoformat(),
         })
 
         owner_id = str(ObjectId())
-        await owners.insert_one({
+        await gyms.insert_one({
             "owner_id": owner_id,
-            "full_name": data.full_name,
+            # "full_name": data.full_name,
             "email": data.email,
-            "phone": data.phone,
+            # "phone": data.phone,
             "password": password_hash,
             "salt": salt,
             "gym_id": gym_id,
@@ -62,7 +62,7 @@ async def owner_signup(data: OwnerSignup):
             "updated_at": datetime.utcnow().isoformat(),
         })
 
-        email_sent = await send_otp_email(data.email, data.full_name, otp)
+        email_sent = await send_otp_email(data.email, data.gym_name, otp)
 
         response = {
             "status": True,
@@ -141,7 +141,7 @@ async def owner_verify(data: VerifyOTP):
 @router.post("/login")
 async def owner_login(data: OwnerLogin):
     try:
-        owners = await mongo.get_collection(OWNERS_COL)
+        owners = await mongo.get_collection('gyms')
 
         owner = await owners.find_one({"email": data.email})
         if not owner:
@@ -150,14 +150,14 @@ async def owner_login(data: OwnerLogin):
         if not owner.get("is_verified"):
             raise HTTPException(status_code=403, detail="Account not verified. Please check your email for the OTP.")
 
-        if owner.get("status") != "active":
-            raise HTTPException(status_code=403, detail="Account is suspended")
+        # if owner.get("status") != "active":
+        #     raise HTTPException(status_code=403, detail="Account is suspended")
 
         if not await validate_password(owner["password"], data.password, owner["salt"]):
             raise HTTPException(status_code=401, detail="Invalid password")
 
         payload = {
-            "owner_id": owner["owner_id"],
+            # "owner_id": owner["owner_id"],
             "email": owner["email"],
             "role": "owner",
             "gym_id": owner["gym_id"],
@@ -170,9 +170,9 @@ async def owner_login(data: OwnerLogin):
             "message": "Login successful",
             "token": token,
             "refresh_token": refresh_token,
-            "owner": {
-                "owner_id": owner["owner_id"],
-                "full_name": owner["full_name"],
+            "gym": {
+                "role": "owner",
+                "gym_name": owner["gym_name"],
                 "email": owner["email"],
                 "gym_id": owner["gym_id"],
             },
